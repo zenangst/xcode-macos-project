@@ -183,7 +183,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D57091A01E23B91200C9347B /* Build configuration list for PBXNativeTarget "SwiftProject-Production" */;
 			buildPhases = (
-				D570919E1E23B91200C9347B /* R.swift */,
 				D570919F1E23B91200C9347B /* SwiftLint */,
 				D57091961E23B91200C9347B /* Sources */,
 				D57091991E23B91200C9347B /* Frameworks */,
@@ -221,7 +220,6 @@
 			buildConfigurationList = D5C7F7521C3BC9CE008CDDBA /* Build configuration list for PBXNativeTarget "SwiftProject-Staging" */;
 			buildPhases = (
 				BD666CE521B5A3CE008B841F /* Unused */,
-				D57091831E23B83C00C9347B /* R.swift */,
 				D57091841E23B8E000C9347B /* SwiftLint */,
 				D5C7F73C1C3BC9CE008CDDBA /* Sources */,
 				D5C7F73D1C3BC9CE008CDDBA /* Frameworks */,
@@ -328,20 +326,6 @@
 			shellPath = /bin/sh;
 			shellScript = "ruby ${SRCROOT}/Source/unused.rb xcode\n";
 		};
-		D57091831E23B83C00C9347B /* R.swift */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = R.swift;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Generated\"\n";
-		};
 		D57091841E23B8E000C9347B /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -355,20 +339,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
-		};
-		D570919E1E23B91200C9347B /* R.swift */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = R.swift;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Generated\"\n";
 		};
 		D570919F1E23B91200C9347B /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
