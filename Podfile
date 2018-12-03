@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :tvos, '11.0'
+platform :macos, '10.14'
 inhibit_all_warnings!
 
 # Utilities

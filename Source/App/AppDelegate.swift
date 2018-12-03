@@ -1,13 +1,12 @@
-import UIKit
+import Cocoa
 
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-  var window: UIWindow?
+@NSApplicationMain
+class AppDelegate: NSObject, NSApplicationDelegate {
+  var window: NSWindow?
 
   // MARK: - App lifecycle
 
-  func application(_ application: UIApplication,
-                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+  func applicationDidFinishLaunching(_ aNotification: Notification) {
     loadApplication()
     return true
   }
@@ -15,8 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   // MARK: - Initial state
 
   private func loadApplication() {
-    let window = UIWindow(frame: UIScreen.main.bounds)
-    let controller = UIViewController()
-    window.rootViewController = controller
+    let window = NSWindow()
+    let windowSize = CGSize(width: 550, height: 640)
+    window.makeKeyAndOrderFront(nil)
+    self.window = window
   }
 }
