@@ -8,7 +8,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
     loadApplication()
-    return true
   }
 
   // MARK: - Initial state
